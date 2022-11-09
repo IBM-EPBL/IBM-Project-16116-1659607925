@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>E-Hospital</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<style>
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.navbar {
+  overflow: hidden;
+  background-color: rgba(252, 17, 107, 0.74);
+}
+
+.navbar a {
+  float: left;
+  font-size: 16px;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+.dropdown .dropbtn {
+  font-size: 16px;  
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+
+.navbar a:hover, .dropdown:hover .dropbtn {
+  background-color: rgb(56, 15, 238);
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+input[type=text], select {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+.registerbtn {
+  background-color: #4CAF50;
+  color: white;
+  padding: 16px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+}
+
+.registerbtn:hover {
+  opacity:1;
+}
+
+
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+.center {
+  margin: auto;
+  width: 60%;
+  border: 3px solid #4d00dbc5;
+  padding: 10px;
+}
+
+</style>
+</head>
+<body>
+
+   
+      
+      <h2 ><p style="text-align: center;">Results:</p> </h2>
+    {% if prediction == 1%}
+    <h1 style="color: red;">!!Chances of having Liver Disease is more, please consult a Doctor.</h1>
+    <p style="text-align:center;"><img src="https://image.shutterstock.com/image-photo/consult-your-doctor-medical-reminder-260nw-189378512.jpg" alt="HTML" width="250" height="150"></p>
+    <p><h1>FOR FREE DOCTOR CONSULTATION:  <a href="https://secondconsult.com/">Click here</h1> </a></p>
+    <h3>Symptoms</h3>
+    <p>Classic symptoms of liver disease include:</p>
+     <ul>
+      <li>nausea</li>
+      <li>vomiting</li>
+      <li>right upper quadrant abdominal pain, and </li>
+      <li>jaundice (a yellow discoloration of the skin due to elevated bilirubin concentrations in the bloodstream).</li>
+    </ul>
+    <br> 
+    <h2>PREVENTION</h2>
+    <p>Diet-induced fatty liver disease</p>
+     <ul>
+      <li>Fat deposits in liver cause inflammation, which cause liver scarring, which leads to liver failure</li>
+      <li>One week of a fast food-heavy diet can cause pathological liver function tests.
+        One can of soda per day raises fatty liver disease by 45%.</li>
+        <p><h1>TO BUY PRESCRIBED MEDICINES <a href="https://www.drugs.com/">follow the link</h1> </a></p>
+        <h2>Alcoholic liver disease</h2>
+        <li>Excessive alcohol consumption causes fatty liver, which leads to inflammation in the liver and irreparable scarring. What is excessive? It’s defined as >2 drinks per day for males, or >1 drink per day for females.</li>
+         <li> Heavy drinking can lead to fatty liver in 3 weeks. Luckily, in most people, stopping drinking allows the liver to resolve within 4-6 weeks.</li>
+         <h2>Hepatitis</h2>
+<li>Hep A—foodborne through feces, preventable with vaccine.
+  <li>Hep B—bloodborne, transmitted sexually and maternally through birth. Also preventable with vaccine.Hep A—foodborne through feces, preventable with vaccine.</li>
+<li>Hep B—bloodborne, transmitted sexually and maternally through birth. Also preventable with vaccine.</li>
+<li>Hep C—bloodborne, transmitted through needle sharing. No prevention. Hep C is the leading cause of liver transplants.
+<li>Hep D—only infects people with hep B, so prevent hep B and you won’t get hep D.</li>
+<li>Hep E—pigs may be the primary reservoir. 11% of pig livers show Hep E virus. Pork consumption in countries correlates with liver disease. Hep E is highly risky for pregnancy, so, while pregnant, cook pork well or avoid entirely.</li>
+<li>Hep C—bloodborne, transmitted through needle sharing. No prevention. Hep C is the leading cause of liver transplants.</li>
+<li>Hep D—only infects people with hep B, so prevent hep B and you won’t get hep D.</li>
+<li>Hep E—pigs may be the primary reservoir. 11% of pig livers show Hep E virus. Pork consumption in countries correlates with liver disease. Hep E is highly risky for pregnancy, so, while pregnant, cook pork well or avoid entirely.</li>
+<h2>Preventing Liver Disease</h2>
+<li> 1) don’t be obese, 2) eat less fat and cholesterol, 3) don’t drink alcohol heavily, and 4) don’t share needles.</li>
+
+Foods shown to be good for livers:
+<p style="text-align:center;"><img src="https://s-media-cache-ak0.pinimg.com/736x/b9/a1/1c/b9a11c3f64900c8dbd094da0f8573cf5.jpg" alt="HTML" width="550" height="450"></p>
+<h1>Oatmeal</h1>
+<li>A double-blinded, randomized, placebo-controlled trial in overweight people showed oatmeal reduced liver inflammation and led to weight loss.</li>
+Refined grains like white rice are associated with an increased risk of liver disease.
+<h1>Cranberries</h1>
+<li>Beat out other common fruits in suppressing liver cancer cells in vitro.</li>
+Extracts failed to match the anticancer effects of whole cranberries.
+It’s best to eat them fresh or frozen, not juiced or dried.
+<h1>Coffee</h1>
+  <li>In the group at highest risk for liver disease, people who drank >2 cups of coffee per day showed less than half the risk of chronic liver problems.
+  <li>Among smokers, >4 cups of coffee per day showed 92% lower risk of death from chronic liver disease.</li>
+  <li>Mechanism of action: coffee may reduce DNA damage, increase the clearance of infected cells, and slow the scarring process.</li>
+</ul>
+    <br> 
+    
+    {% elif prediction == 0%}
+    <h2 style="color: blue;">No Worries!!! You don't have Liver Disease.</h2>
+    <p style="text-align: center;"><img src="https://cdn.shopify.com/s/files/1/0038/0878/8544/files/Infographic_ExerciseForFattyLiver-2.jpg" alt="HTML" width="550" height="650"></p>
+    {% endif %}
+    
+
+</body>
+</html>
+
